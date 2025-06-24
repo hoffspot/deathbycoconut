@@ -25,7 +25,7 @@ jobs:
           aws s3 sync . s3://deathbycoconut.band --delete --exclude ".git/*"
 
       # OPTIONAL: Invalidate CloudFront cache (if using a distribution)
-      - name: Invalidate CloudFront cache
+      - name: Invalidate CloudFront cache 
         run: |
           if [ -n "${{ secrets.DISTRIBUTION_ID }}" ]; then
             aws cloudfront create-invalidation \
