@@ -1399,104 +1399,622 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive Design */
+/* Mobile Responsive Design */
+/* iPhone 15 Pro Max, iPhone 15 Plus, iPhone 14 Pro Max */
+@media (max-width: 430px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+        height: 60px;
+    }
+    
+    .nav-logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        margin-top: 60px;
+        height: calc(100vh - 60px);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .member-card {
+        padding: 1rem;
+    }
+    
+    .tour-date {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .date-info {
+        text-align: center;
+    }
+    
+    .ticket-info {
+        text-align: center;
+    }
+    
+    .merch-item.featured {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .merch-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .live-video {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .newsletter-inputs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* iPhone 15, iPhone 14, iPhone 13 */
+@media (min-width: 431px) and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+        height: 65px;
+    }
+    
+    .nav-logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero {
+        margin-top: 65px;
+        height: calc(100vh - 65px);
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .merch-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Samsung Galaxy S24 Ultra, S24+, S23 Ultra */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 25px;
+    }
+    
+    .nav-container {
+        padding: 0 25px;
+        height: 70px;
+    }
+    
+    .nav-logo h1 {
+        font-size: 1.4rem;
+    }
+    
+    .hero {
+        margin-top: 70px;
+        height: calc(100vh - 70px);
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .merch-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .tour-date {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .live-video {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
+
+/* Tablet and Small Desktop */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .nav-container {
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .merch-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mobile Navigation Improvements */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
-
+    
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        backdrop-filter: blur(10px);
+        border-top: 2px solid #b43522;
         padding: 2rem 0;
+        gap: 1.5rem;
     }
-
+    
     .nav-menu.active {
         left: 0;
     }
-
-    .hero-title {
-        font-size: 2.5rem;
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 1rem 0;
     }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
+    
+    /* Hamburger Animation */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
-
-    .btn {
-        display: block;
-        margin: 10px auto;
-        width: 200px;
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
-
-    .tour-date {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .date-info {
-        justify-content: center;
-    }
-
-    .ticket-info {
-        text-align: center;
-    }
-
-    .album-feature {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .live-video {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-
-    .merch-item.featured {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .newsletter-inputs {
-        flex-direction: column;
-    }
-
-    .newsletter-inputs input {
-        min-width: auto;
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
-@media (max-width: 480px) {
+/* Touch-friendly improvements for mobile */
+@media (max-width: 768px) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .size-select {
+        min-height: 44px;
+        font-size: 1rem;
+    }
+    
+    input, textarea, select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .merch-options {
+        gap: 1rem;
+    }
+    
+    .merch-options .btn {
+        flex: 1;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 70px;
+    }
+    
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-
-    .container {
-        padding: 0 15px;
+    
+    .hero-subtitle {
+        font-size: 1rem;
     }
-
-    .nav-container {
-        padding: 0 15px;
+    
+    .nav-menu {
+        top: 60px;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
+}
 
-    .page-header h1 {
-        font-size: 2rem;
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background {
+        background-size: cover;
     }
+    
+    .image-placeholder,
+    .photo-placeholder,
+    .thumbnail-placeholder {
+        background-size: cover;
+    }
+}
 
-    .content-section h2 {
-        font-size: 1.5rem;
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-title {
+        animation: none;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0a0a0a;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hamburger,
+    .btn,
+    .social-links {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero {
+        height: auto;
+        margin-top: 0;
     }
 }
 
 .death-font {
     font-family: 'DeathTohm', 'Orbitron', monospace !important;
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+    /* Optimize background images for mobile */
+    body::before {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll; /* Better performance on mobile */
+    }
+    
+    /* Improve text readability on small screens */
+    .content-section p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .member-card p,
+    .album-item p,
+    .review-excerpt {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    /* Better spacing for mobile */
+    .content-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    .page-header {
+        margin-bottom: 2rem;
+    }
+    
+    /* Improve form elements on mobile */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 12px 15px;
+        border-radius: 8px;
+        border: 2px solid #333;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: #b43522;
+        box-shadow: 0 0 10px rgba(180, 53, 34, 0.3);
+    }
+    
+    /* Better button styling for mobile */
+    .btn {
+        border-radius: 8px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:active {
+        transform: scale(0.98);
+    }
+    
+    /* Improve card interactions */
+    .member-card,
+    .merch-item,
+    .video-item,
+    .album-item {
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .member-card:active,
+    .merch-item:active,
+    .video-item:active,
+    .album-item:active {
+        transform: scale(0.98);
+    }
+    
+    /* Better table responsiveness */
+    .size-table {
+        font-size: 0.9rem;
+    }
+    
+    .size-table th,
+    .size-table td {
+        padding: 8px 6px;
+    }
+    
+    /* Improve social media links on mobile */
+    .social-link-large {
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    /* Better newsletter form on mobile */
+    .newsletter-form input {
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    
+    .newsletter-form button {
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+/* Specific improvements for very small screens */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        padding: 0 10px;
+    }
+    
+    .nav-logo h1 {
+        font-size: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
+/* Fix for iOS Safari viewport issues */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        height: -webkit-fill-available;
+    }
+    
+    .nav-menu {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Fix for Android Chrome address bar */
+@media screen and (max-height: 600px) {
+    .hero {
+        height: 100vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure proper spacing on all mobile devices */
+@media (max-width: 768px) {
+    .page-content {
+        padding-top: 20px;
+    }
+    
+    .footer {
+        margin-top: 3rem;
+    }
+    
+    .footer-content {
+        padding: 2rem 0;
+    }
+    
+    .footer-bottom {
+        padding: 1rem 0;
+    }
 } 
