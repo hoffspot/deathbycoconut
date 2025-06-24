@@ -26,7 +26,7 @@ jobs:
 
       # OPTIONAL: Invalidate CloudFront cache (if using a distribution)
       - name: Invalidate CloudFront cache
-        if: ${{ secrets.DISTRIBUTION_ID != '' }}
+        if: secrets.DISTRIBUTION_ID
         run: |
           aws cloudfront create-invalidation \
             distribution-id ${{ secrets.DISTRIBUTION_ID }} \
