@@ -91,6 +91,18 @@ h1, h2, h3, h4, h5, h6, .nav-logo h1, .nav-link {
     height: 70px;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(180, 53, 34, 0.5));
+}
+
 .nav-logo h1 {
     font-size: 1.5rem;
     color: #b43522;
@@ -1411,6 +1423,10 @@ footer {
         height: 60px;
     }
     
+    .nav-logo-img {
+        height: 30px;
+    }
+    
     .nav-logo h1 {
         font-size: 1.2rem;
     }
@@ -1518,6 +1534,10 @@ footer {
         height: 65px;
     }
     
+    .nav-logo-img {
+        height: 35px;
+    }
+    
     .nav-logo h1 {
         font-size: 1.3rem;
     }
@@ -1565,6 +1585,10 @@ footer {
     .nav-container {
         padding: 0 25px;
         height: 70px;
+    }
+    
+    .nav-logo-img {
+        height: 40px;
     }
     
     .nav-logo h1 {
